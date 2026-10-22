@@ -1,0 +1,6 @@
+Project: BidSentry-E — Evidence-Verified Tender X-Ray for Indian MSMEs
+Team: Syntax Squad
+Track: AI/ML — Open Innovation
+
+Description (under 500 characters):
+BidSentry-E helps Indian MSMEs pre-screen public tenders by surfacing candidate qualification clauses, linking findings to source text, checking Agent-proposed quotes against a separate fetch, comparing supported requirements with declared supplier facts, and showing unknowns and page changes for human review. TinyFish Search, Fetch and Agent support the workflow; this is pre-screening assistance, not an eligibility guarantee.

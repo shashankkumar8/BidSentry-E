@@ -1,0 +1,26 @@
+BIDSENTRY-E QUICK START (WINDOWS POWERSHELL)
+
+1) Python 3.11+ is required.
+   py -3.11 -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
+
+2) Offline quality gates:
+   python engine.py
+   pytest -q
+   python -m compileall -q app engine.py
+   node --check app/static/app.js
+   python -m scripts.check_inline_js
+
+   The CLI marks itself LOCAL_SYNTHETIC_SMOKE_TEST; it does not call TinyFish.
+
+3) Launch:
+   python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+   Open http://127.0.0.1:8000
+   API docs: http://127.0.0.1:8000/docs
+
+4) Live TinyFish: Ctrl+C to stop; Copy-Item .env.example .env; edit .env and set TINYFISH_API_KEY privately; restart. Follow BUILD_SEQUENCE.md.
+
+5) Never submit .env, any API key, SQLite database, runtime cache or .venv. Follow SUBMISSION_GUIDE.md for the event.
+
+Agent UI path: POST /api/v1/inspect/stream (TinyFish REST SSE). /api/v1/inspect is retained as a synchronous SDK compatibility route.

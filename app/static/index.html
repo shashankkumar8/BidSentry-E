@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b111b" />
+  <meta name="description" content="BidSentry helps Indian MSMEs screen public tenders with live-web evidence, eligibility signals and change monitoring." />
+  <title>BidSentry — Tender Readiness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#top" aria-label="BidSentry home">
+        <span class="brand-mark"><svg viewBox="0 0 42 42" aria-hidden="true"><path d="M21 3 36 10v11c0 9-6 14-15 18C12 35 6 30 6 21V10z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m13 21 5 5 11-12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></svg></span>
+        <span><strong>bid<span>sentry</span></strong><small>TENDER INTELLIGENCE</small></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="nav-list">
+        <button class="nav-item active" data-nav="Overview"><span class="nav-icon">◫</span> Overview</button>
+        <button class="nav-item" data-nav="Find tenders"><span class="nav-icon">⌕</span> Find tenders</button>
+        <button class="nav-item" data-nav="Clause ledger"><span class="nav-icon">▤</span> Clause ledger</button>
+        <button class="nav-item" data-nav="Change watch"><span class="nav-icon">↻</span> Change watch <span class="nav-count">BETA</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="plan-card"><span class="plan-glyph">✳</span><div><b>Evidence-first screening</b><p>Every signal has a source. Every unknown stays unknown.</p></div></div>
+        <div class="sidebar-profile"><div class="avatar">MS</div><div><b>MSME Supplier</b><small>Sample workspace</small></div><span class="more">•••</span></div>
+      </div>
+    </aside>
+
+    <main id="top" class="main">
+      <header class="topbar">
+        <div class="breadcrumbs">Workspace <span>/</span> <b>Overview</b></div>
+        <div class="topbar-right"><span id="api-status" class="api-status"><i></i> Checking TinyFish…</span><span class="top-avatar">MS</span></div>
+      </header>
+
+      <section class="page-wrap">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> PROCUREMENT INTELLIGENCE <span class="eyebrow-divider">/</span> INDIA</div>
+        <div class="hero-row">
+          <div class="hero-copy">
+            <h1>Find the right tenders.<br><em>Catch the hidden blockers.</em></h1>
+            <p>Screen public opportunities against your supplier profile. See eligibility signals, source clauses and what still needs human verification — before you spend time preparing a bid.</p>
+          </div>
+          <div class="hero-stamp"><span class="stamp-icon">✳</span><span><b>Never bid blind.</b><small>Source-backed. Explainable. Human-led.</small></span></div>
+        </div>
+
+        <div class="notice-banner"><span class="notice-symbol">i</span><div><b>Decision support, not a bid guarantee.</b> BidSentry highlights potential blockers from public page text. Always verify the complete official tender schedule, linked documents and latest corrigenda before acting.</div><button id="dismiss-notice" aria-label="Dismiss notice">×</button></div>
+
+        <div class="metrics-grid">
+          <article class="metric-card"><div class="metric-top"><span>MSMEs on GeM</span><span class="metric-icon">↗</span></div><div class="metric-number">11.75<span class="metric-unit"> lakh</span></div><div class="metric-foot"><span class="source-dot"></span> As of 30 Jul 2026 <a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2297820&lang=2&reg=48" target="_blank" rel="noreferrer">Official source ↗</a></div></article>
+          <article class="metric-card"><div class="metric-top"><span>MSME order value</span><span class="metric-icon">₹</span></div><div class="metric-number">₹2.37<span class="metric-unit"> lakh cr</span></div><div class="metric-foot"><span class="source-dot"></span> FY 2025–26 <a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2297820&lang=2&reg=48" target="_blank" rel="noreferrer">Official source ↗</a></div></article>
+          <article class="metric-card metric-action"><div class="metric-top"><span>Your search run</span><span class="metric-icon">⌁</span></div><div id="metric-results" class="metric-number">—<span class="metric-unit"> tenders</span></div><div id="metric-run-caption" class="metric-foot">Run a live search to start screening</div></article>
+          <article class="metric-card metric-action"><div class="metric-top"><span>Review signals</span><span class="metric-icon">⚑</span></div><div id="metric-flags" class="metric-number">—<span class="metric-unit"> flagged</span></div><div id="metric-flag-caption" class="metric-foot">Unknowns are surfaced, not guessed</div></article>
+        </div>
+
+        <section class="search-panel" id="search-panel">
+          <div class="section-head"><div><div class="section-kicker">01 / SUPPLIER PROFILE</div><h2>What can your business deliver?</h2><p>Use a concise profile to discover relevant public tenders and pre-screen requirements.</p></div><span class="profile-badge"><span class="badge-pulse"></span> PROFILE-BASED</span></div>
+          <form id="search-form">
+            <div class="field-grid">
+              <label class="field field-wide"><span>Products / services <b>*</b></span><input id="keywords" name="keywords" required value="IT infrastructure support and network maintenance" maxlength="240" placeholder="e.g. solar EPC, IT support, office furniture" /><small>Used in TinyFish live-web discovery and relevance ranking.</small></label>
+              <label class="field"><span>Sector</span><input id="sector" name="sector" value="IT services" maxlength="100" placeholder="e.g. IT services" /></label>
+              <label class="field"><span>Preferred region</span><input id="location" name="location" value="Delhi NCR" maxlength="100" placeholder="India or state/city" /></label>
+              <label class="field"><span>Annual turnover (₹ crore)</span><input id="turnover" name="turnover" type="number" min="0" max="100000" step="0.1" value="1.2" /></label>
+              <label class="field"><span>Relevant experience (years)</span><input id="experience" name="experience" type="number" min="0" max="100" value="4" /></label>
+              <label class="field"><span>Maximum available EMD / bid security (₹ lakh)</span><input id="emd-budget" name="emd-budget" type="number" min="0" max="1000000" step="0.1" value="" placeholder="Leave blank if unknown" /><small>Capacity only; exemption and permitted instruments must be checked from the tender.</small></label>
+              <label class="field field-wide"><span>Certifications / registrations</span><input id="certs" name="certs" value="GST, ISO 9001" placeholder="Comma-separated, e.g. GST, Udyam, ISO 9001" /><small>Only explicit matches are surfaced; supporting documents still need to be checked.</small></label>
+              <label class="field"><span>Udyam registration</span><select id="udyam" name="udyam"><option value="true" selected>Yes — registered</option><option value="false">No</option><option value="unknown">Not sure</option></select></label>
+              <label class="field"><span>Maximum results</span><select id="max-results" name="max-results"><option>4</option><option selected>5</option><option>6</option><option>8</option></select></label>
+            </div>
+            <div class="search-actions"><div class="safe-note"><span>⌘</span> API key stays on the backend. No automatic bid submission.</div><div class="button-row"><button id="demo-btn" type="button" class="btn btn-secondary">Explore sample</button><button id="live-btn" type="submit" class="btn btn-primary"><span class="btn-icon">⌕</span> Search live tenders <span class="arrow">↗</span></button></div></div>
+          </form>
+        </section>
+
+        <section id="results-section" class="results-section" hidden>
+          <div class="results-heading"><div><div class="section-kicker">02 / OPPORTUNITY INTELLIGENCE</div><h2 id="results-title">Screening results</h2><p id="results-subtitle">Results and evidence from the latest run.</p></div><div id="run-badge" class="run-badge">—</div></div>
+          <div id="results-alert" class="results-alert" hidden></div>
+          <div id="result-list" class="result-list"></div>
+        </section>
+
+        <section class="method-strip">
+          <div class="method-icon">⌘</div><div><b>How the score works</b><p>TF-IDF text relevance helps prioritize reading. It is <strong>not</strong> a probability of winning or proof of eligibility. Clause extraction is evidence-linked; uncertain criteria remain under review.</p></div><a href="https://docs.tinyfish.ai/" target="_blank" rel="noreferrer">TinyFish docs ↗</a>
+        </section>
+        <footer class="footer"><span>© 2026 BidSentry · Hackathon prototype</span><span>Built for <b>Kritical Hacks '26</b> · AI/ML Track</span><a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2297820&lang=2&reg=48" target="_blank" rel="noreferrer">Market context: PIB / GeM ↗</a></footer>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="detail-modal" class="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-head"><div><div class="section-kicker">EVIDENCE INSPECTOR</div><h2 id="modal-title">Tender evidence</h2></div><button id="modal-close" class="modal-close" aria-label="Close">×</button></div>
+      <div id="modal-content" class="modal-content"></div>
+    </div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

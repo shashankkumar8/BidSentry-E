@@ -1,0 +1,5 @@
+Read AGENTS.md and SPEC.md before editing.
+Use only source-backed evidence; never fabricate live TinyFish results, timings, step counts or cost savings.
+Keep missing or ambiguous facts as Unknown / Human review needed.
+Never describe BidSentry-E as granting legal eligibility or guaranteeing a bid outcome.
+Run tests and syntax checks after every implementation change; state what was actually verified.

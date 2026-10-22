@@ -1,0 +1,38 @@
+BIDSENTRY-E — SYNTAX SQUAD TECHNICAL RELEASE
+
+PURPOSE
+- Technical source archive only. Pitch PPT/PDF and deck-generation assets are deliberately excluded.
+- Original user-provided inputs are kept separately under references/ and were not overwritten.
+
+SOURCE PROVENANCE
+- SOURCE_PROVENANCE.md — provenance and separation of original input vs active implementation
+- references/Proposed_Master_Build_Original.txt — byte-preserved user-provided long proposal
+- references/Exact_Copies_Bundle.zip — byte-preserved original four-file bundle
+- references/extracted/ — readable extracted copies of the four original reference documents
+- INPUT_HASHES.txt — SHA-256 values for original supplied inputs
+
+APPLICATION
+- app/main.py — FastAPI routes, validated source URLs, snapshot diffs, SSE route and audit timing
+- app/tinyfish.py — Search/Fetch REST adapters, Agent REST SSE adapter, separate SDK compatibility path
+- app/analyzer.py and app/evidence.py — relevance ranker, conservative parser and independent exact quote check
+- app/static/ — web workbench, HTML, CSS and JavaScript
+- app/data/demo_tenders.json — explicitly synthetic example data
+- engine.py — deterministic local synthetic smoke runner
+
+TESTS / TOOLING
+- tests/ — 68 automated tests, including provider-stream, adversarial edge-case regressions and fail-closed cases; provider calls are mocked
+- requirements.txt, .env.example, .gitignore, pytest.ini, run_windows.bat
+- scripts/check_inline_js.py
+
+TECHNICAL DOCUMENTATION
+- 00_START_HERE.md, README.md, SPEC.md, SSE_STREAM_CONTRACT.md, BUILD_SEQUENCE.md
+- PROPOSED_MASTER_BUILD_AUDIT.md, REFERENCE_SYNTHESIS.md, RECONFIGURATION_DECISIONS.md
+- RELEASE_VERIFICATION.md, SOURCE_PROVENANCE.md, INPUT_HASHES.txt
+- SUBMISSION_GUIDE.md, FINAL_SUBMISSION_STEPS.md, FINAL_SUBMISSION_COPY.txt, UNSTOP_IDEA_DESCRIPTION.txt, SUBMISSION_CHECKLIST.md
+- MASTER_SOLUTION_PLAYBOOK.md, BidSentry_Final_Build_Brief.md, RESEARCH_NOTES.md, HACKATHON_OPERATING_SYSTEM.md
+- DEMO_SCRIPT.md, JUDGE_QA.md, docs/ (including IMPLEMENTATION_AUDIT.md, TEST_REPORT.md, LIVE_VERIFICATION.md)
+
+SECURITY / REALITY BOUNDARY
+- No .env, API key, SQLite database, cache, virtual environment, slide deck, presentation PDF, presentation image or unrelated project idea is included.
+- No live TinyFish run, public GitHub push, demo-video publication or Unstop submission is claimed.
+- Local baseline: 68 tests passed with provider responses mocked.

@@ -1,0 +1,65 @@
+{
+  "profile": {
+    "keywords": "IT infrastructure support network maintenance",
+    "sector": "IT services",
+    "location": "Delhi NCR",
+    "turnover_crore": 1.2,
+    "years_experience": 4,
+    "certifications": ["GST", "ISO 9001"],
+    "udyam_registered": true
+  },
+  "tenders": [
+    {
+      "id": "DEMO-IT-001",
+      "title": "Illustrative tender: IT infrastructure maintenance and support",
+      "reference": "SYNTHETIC-DEMO-001",
+      "organization": "Example Public Department (fictional)",
+      "url": "https://example.com/demo-tender-001",
+      "domain": "example.com",
+      "source_status": "Synthetic demo data",
+      "snippet": "This fictional tender demonstrates how BidSentry shows a possible 3-year relevant-experience clause, annual turnover threshold and certificate evidence. It is not a real tender notice.",
+      "deadline": "Illustrative only — verify live source",
+      "relevance_score": 87.4,
+      "assessment": {
+        "status": "Human review needed",
+        "potential_blockers": [],
+        "matches": ["Demo profile lists ISO 9001."],
+        "unknowns": ["The fictional example requires full schedule review; no eligibility determination is made."],
+        "turnover_threshold_crore": 1.0,
+        "experience_threshold_years": 3,
+        "required_certifications": ["ISO 9001"],
+        "disclaimer": "Synthetic sample only. No real tender eligibility is assessed."
+      },
+      "money_mentions": ["₹1 crore (illustrative)"],
+      "risk_flags": ["Synthetic demo data — not a live notice", "Check the complete tender schedule and corrigenda"],
+      "fetched": false,
+      "checked_at": "Demo data"
+    },
+    {
+      "id": "DEMO-IT-002",
+      "title": "Illustrative tender: multi-site network equipment supply",
+      "reference": "SYNTHETIC-DEMO-002",
+      "organization": "Example Procurement Unit (fictional)",
+      "url": "https://example.com/demo-tender-002",
+      "domain": "example.com",
+      "source_status": "Synthetic demo data",
+      "snippet": "This fictional second case illustrates a possible requirement that the vendor profile does not list. It is included only to demonstrate a potential-blocker workflow.",
+      "deadline": "Illustrative only — verify live source",
+      "relevance_score": 71.2,
+      "assessment": {
+        "status": "Potential blocker",
+        "potential_blockers": ["Illustrative only: profile lacks a required technical certification in this synthetic case."],
+        "matches": [],
+        "unknowns": ["A real notice must be checked before any bid/no-bid decision."],
+        "turnover_threshold_crore": 2.5,
+        "experience_threshold_years": 5,
+        "required_certifications": ["ISO 27001"],
+        "disclaimer": "Synthetic sample only. No real tender eligibility is assessed."
+      },
+      "money_mentions": ["₹2.5 crore (illustrative)"],
+      "risk_flags": ["Synthetic demo data — not a live notice", "Potential blocker shown for UI demonstration only"],
+      "fetched": false,
+      "checked_at": "Demo data"
+    }
+  ]
+}

@@ -1,0 +1,2071 @@
+hey what is the approach to solve a ps of hackathon to make a  hackathon wiinnning sol what is the ideal roadmap or process to do so as when i got ps i dump into diff llm like claude chatgpt and gemini to do it for me and not get even shortlised i am not sure but all others do the same and we all get the same approaches from these models and nothing happens is it how to overcome it as i have to win some hackathons for sure please tell in detailed manner
+Let me tell you something important: your problem probably isn't that you don't have access to good AI models. It's that you're using AI at the wrong stage of the problem-solving process.
+
+You're doing what a huge number of hackathon participants are tempted to do:
+
+Receive a problem statement (PS).
+
+Paste it into ChatGPT, Claude, Gemini, or all three.
+
+Ask for an innovative solution.
+
+Pick an idea that sounds impressive.
+
+Build something.
+
+Present it and hope the judges like it.
+
+The problem is that the models are usually pretty good at generating plausible ideas, but a plausible idea isn't necessarily a distinctive, useful, technically impressive hackathon project.
+
+When everyone gives similar context to similar models and asks them the same question, they often get similar solution patterns: AI assistants, dashboards, chatbots, recommendation systems, prediction tools, and all-in-one platforms.
+
+You end up competing with teams that have built a very similar idea, sometimes with better execution, deeper technical work, stronger evidence, or a better demonstration.
+
+The solution isn't to stop using AI. It's to stop outsourcing your thinking to AI.
+
+Use it to investigate the problem, challenge your assumptions, evaluate trade-offs, speed up implementation, and test your work. You should own the crucial decisions: which problem matters most, what opportunity other teams are missing, what to build, and why your solution deserves to win.
+
+There is no process that can guarantee a hackathon victory. But there is a disciplined process that can substantially improve your odds of creating a shortlist-worthy project.
+
+1. Understand what you're actually competing to win
+A hackathon has at least four different challenges hidden inside it.
+
+Problem selection
+
+Find a specific, important problem rather than choosing the first idea that sounds exciting.
+
+Differentiation
+
+Find a valuable angle that isn't simply another version of the same solution everyone is building.
+
+Execution
+
+Build a working, coherent product that demonstrates the central idea convincingly within the available time.
+
+Proof and communication
+
+Make it easy for judges to understand why the problem matters, what is different, and what your product actually achieves.
+
+These aren't theoretical concerns. For example, a 2026 ImpactHack rubric assigns separate weights to impact, technical execution, innovation, functionality, AI and technology use, and presentation. MLH's standard digital-event guidance instead gives equal weight to technology, design, completion, and learning. The exact criteria therefore depend on the event you enter. 
+
+Devpost
++1
+
+This leads to the first rule:
+
+Don't begin by asking, "What should I build?" Begin by asking, "What would make a judge score a project highly in this particular hackathon?"
+
+2. The complete roadmap: from PS to a winning submission
+Here's the process I would use if I were preparing to compete seriously and wanted to improve across multiple hackathons, not just build one impressive-looking project.
+
+01
+Decode the brief
+
+Extract constraints, sponsor goals, and judging weights.
+
+02
+Investigate the problem
+
+Identify real users, pain points, root causes, and evidence.
+
+03
+Map the competition
+
+Find existing products, GitHub projects, prior winners, and gaps.
+
+04
+Create distinct hypotheses
+
+Develop multiple genuinely different approaches, not multiple UI variations.
+
+05
+Validate and select
+
+Score your ideas, test the riskiest assumption, and choose one.
+
+06
+Design the smallest proof
+
+Specify the core workflow and the one thing that will impress judges.
+
+07
+Build a vertical slice
+
+Make one important user journey work end-to-end.
+
+08
+Test and refine
+
+Check functionality, failure cases, real value, and technical reliability.
+
+09
+Package the story
+
+Prepare the demo, pitch, README, evidence, and submission.
+
+10
+Learn from results
+
+Review feedback and turn the lessons into an advantage at your next event.
+
+Let's go through these properly.
+
+Step 1 — Decode the problem statement and the judging criteria
+This is where you should spend your first serious thinking session.
+
+Don't interpret a problem statement as merely a request to build an application. Read it as a combination of:
+
+A problem someone wants solved.
+
+A set of constraints.
+
+A set of sponsor or organizer priorities.
+
+A set of criteria that judges will use to compare submissions.
+
+Read the entire rules page, not just the headline. Look for required APIs, particular technologies, eligibility requirements, submission format, deadlines, theme alignment, and any sponsor-specific award tracks. Devpost's own planning guidance recommends checking requirements and judging criteria before brainstorming and comparing ideas on feasibility, time, and relevance. 
+
+Devpost.com Help Center
+
+Create a judge scorecard before you write any code
+Suppose the rubric looks like this:
+
+Criterion
+
+Weight
+
+What you must demonstrate
+
+Impact
+
+20%
+
+A meaningful problem and credible value
+
+Technical execution
+
+20%
+
+A sound implementation and interesting engineering
+
+Innovation
+
+15%
+
+A distinctive, justified approach
+
+Functionality
+
+15%
+
+A working core workflow
+
+AI/technology use
+
+15%
+
+Technology that genuinely enables the solution
+
+Presentation
+
+15%
+
+A clear, convincing live or recorded demo
+
+These weights are taken from one real 2026 event as an illustration, not a universal rubric. 
+
+Devpost
+
+For each criterion, write down the evidence you need. Don't just put "good UI" or "innovative AI."
+
+For example:
+
+Impact: What user problem does the product address? Can you demonstrate a meaningful improvement?
+
+Technical execution: What technical challenge did you solve, and why did your architecture or method make sense?
+
+Innovation: What does your approach do differently from existing alternatives?
+
+Functionality: Can someone complete the central task in the demo without you manually intervening?
+
+AI/technology: Would the solution materially lose its value if you removed the technology you're highlighting?
+
+Presentation: Can a judge understand the product and its value in the first minute?
+
+The last question for each criterion is: What would I have to show to earn a high score here?
+
+This exercise changes your behavior. Instead of building ten features because they sound impressive, you start building evidence for the scores that matter.
+
+Step 2 — Convert the PS into a precise problem definition
+Most participants move from the problem statement straight to the solution.
+
+Don't.
+
+First, rewrite the PS in terms of a real user's experience.
+
+Use this template:
+
+User: Who specifically experiences the problem?
+
+Situation: At what moment or in what context does it occur?
+
+Current workaround: What do they do today?
+
+Pain: What is slow, expensive, unreliable, inaccessible, risky, or frustrating?
+
+Root cause: Why does the problem continue to exist?
+
+Desired outcome: What should become measurably better?
+
+Constraints: What limits the solution—time, connectivity, cost, data, hardware, regulation, or user behavior?
+
+Unknowns: Which assumptions have not yet been verified?
+
+The crucial distinction is between a symptom and a root cause.
+
+For instance, imagine a PS about reducing food wastage.
+
+"Restaurants waste food" describes a symptom.
+
+Potential underlying problems include unpredictable demand, poor inventory visibility, inaccurate expiry tracking, unreliable pickup coordination, and a mismatch between surplus food and the organizations able to collect it.
+
+Those are different problems requiring different solutions.
+
+An application that tries to address all five will likely become too broad for a short hackathon. A project that solves one particularly painful bottleneck might be much more compelling.
+
+Ask "why?" repeatedly until you can identify a bottleneck your team can reasonably address. Then form a hypothesis, rather than pretending you already know the answer.
+
+Example:
+
+We believe small restaurants waste sellable meals because staff discover the surplus too late for nearby recipient organizations to arrange pickup. If we make surplus availability actionable early enough, more food could be collected before it becomes unusable.
+
+Notice that this is a hypothesis to test, not a claim that you have established the cause.
+
+That distinction matters: a hackathon idea becomes stronger when its important assumptions are investigated rather than merely described confidently.
+
+Step 3 — Investigate what already exists
+This is one of the most valuable steps that generic AI brainstorming skips or performs superficially.
+
+Before generating solutions, investigate existing approaches.
+
+Search for:
+
+Commercial products addressing the problem.
+
+Open-source GitHub repositories.
+
+Previous submissions to the same or related hackathons.
+
+Research papers, public datasets, and relevant APIs.
+
+Failed approaches, recurring complaints, and workflow limitations.
+
+Users discussing their existing workarounds in forums or communities.
+
+Your aim is not to prove that nobody has ever built anything similar. That is rarely a realistic bar.
+
+Your aim is to understand what already works, what does not work well enough, and where you can provide a meaningful improvement.
+
+Make a simple comparison table:
+
+Existing approach
+
+What it does well
+
+Where it falls short
+
+Opportunity to investigate
+
+Product A
+
+Handles the common case
+
+Requires manual input
+
+Can the input be automated?
+
+Product B
+
+Provides useful predictions
+
+Doesn't support the next action
+
+Can prediction lead directly to action?
+
+Manual workflow
+
+Familiar and accessible
+
+Repetitive and error-prone
+
+Can one painful step be eliminated?
+
+These entries are a template, not findings about a particular market; fill them with actual research.
+
+Look beyond other hackathon projects, too. A project may look original compared with last year's winners yet duplicate an existing commercial product.
+
+The most important question to ask
+What do existing solutions make the user do that they shouldn't have to do?
+
+This often reveals stronger ideas than asking what feature you could add.
+
+Maybe a user still needs to verify every AI-generated result manually. Maybe the information arrives too late. Perhaps a tool gives a prediction but no actionable next step. Maybe a solution assumes reliable internet access or requires users to enter information that already exists elsewhere.
+
+Each of these is a possible innovation opportunity—but only after you establish that it is relevant to the target user.
+
+Step 4 — Find the wedge that differentiates your solution
+This is the most important thinking stage if your current projects feel too similar to everyone else's.
+
+A common mistake is assuming that innovation means inventing an entirely new category of product. It doesn't have to.
+
+You can differentiate by choosing a much narrower problem, a neglected user group, a better workflow, a different technical approach, a useful integration, better evidence, or a substantially more reliable result.
+
+A good hackathon project usually has a focused starting point rather than trying to become a complete platform immediately.
+
+Think of the core opportunity as:
+
+A specific user + a high-friction task + a better method + a demonstrable outcome.
+
+Consider an illustrative education problem.
+
+GENERIC APPROACH
+
+AI exam preparation assistant
+
+Upload notes, generate a summary, create quizzes, and chat with a tutor.
+
+MORE SPECIFIC HYPOTHESIS
+
+A prerequisite-gap detector for a specific exam syllabus
+
+A learner answers a short diagnostic quiz. The tool identifies which prerequisite concepts may be causing repeated mistakes, links each diagnosis to supporting answers, and creates a focused revision sequence using the actual syllabus and past papers.
+
+The second idea is not automatically original—similar products may exist, and that must be researched. But it gives you a much sharper hypothesis to investigate.
+
+It also leads to a more meaningful demo: show the learner's answer, identify the underlying gap, trace the evidence, and generate the next study action. You can demonstrate the complete reasoning workflow rather than displaying a generic chatbot response.
+
+Here are five useful ways to search for that kind of wedge:
+
+1. Narrow the user. Don't target everybody affected by the issue. Find a group with a distinctive need or constraint.
+
+2. Narrow the moment. Identify the exact point in a workflow where the existing process fails.
+
+3. Remove a handoff. Can your system turn information into an action without unnecessary copying, searching, or coordination?
+
+4. Make an unreliable task verifiable. Could evidence, structured outputs, evaluation, or human review make an existing tool more trustworthy?
+
+5. Solve an overlooked constraint. Consider language, connectivity, cost, accessibility, integration, latency, or limited data.
+
+The best option is the one that addresses a genuine problem and can be meaningfully demonstrated within your time and resources. A clever twist that doesn't matter to the user is not an advantage.
+
+3. How to use ChatGPT, Claude, and Gemini without getting generic ideas
+Here's the change I would make immediately.
+
+Stop asking three models to solve the same problem. Assign them different jobs in a problem-solving process.
+
+When you ask all three, "Give me the most innovative solution for this PS," you're still asking the same fundamental question. Getting three answers doesn't necessarily produce three independent, well-researched opportunities.
+
+Instead, use AI in five distinct roles.
+
+Top view of blank notebook with magnifying glass pen and ruler flat lay
+
+Role 1: The analyst
+
+Extract the actual requirements, constraints, stakeholders, unknowns, and judging priorities. No ideas yet.
+
+What is Social Listening? (And How to Start in 5 Steps)
+
+Role 2: The researcher
+
+Investigate competing approaches, existing tools, open-source projects, and possible gaps. Verify claims against sources.
+
+Do Papel ao Teste: Prototipagem para Validação de Ideias
+
+Role 3: The challenger
+
+Generate alternative problem-solving mechanisms, question your assumptions, and find potential weaknesses in your preferred idea.
+
+ACube Technologies | IT Consulting & Software Development
+
+Role 4: The engineer
+
+Help design the architecture, implement the key workflow, integrate APIs, debug, and test the product.
+
+大專校院綠色化學創意競賽-得獎專區-歷屆獲獎名單-第2屆-金獎
+
+Role 5: The skeptical judge
+
+Assess the idea and demo against the real judging rubric. Look for duplication, missing evidence, weak functionality, and unanswered questions.
+
+The images above are simply illustrative. What matters is separating these tasks so you don't get trapped in one cycle of idea generation.
+
+The prompt sequence I would actually use
+You can save these prompts and reuse them at future hackathons. Replace the bracketed fields with the actual details.
+
+Prompt 1 — Decode the PS
+Act as a product strategist analyzing a hackathon problem statement.
+
+Problem statement:
+[PASTE THE COMPLETE PS]
+
+Hackathon rules and judging criteria:
+[PASTE THE RULES/RUBRIC]
+
+My team's skills:
+[SKILLS, EXPERIENCE, AVAILABLE TEAM MEMBERS]
+
+Time available:
+[HOURS]
+
+Our available resources:
+[APIs, HARDWARE, DATA, CLOUD CREDITS, OTHER CONSTRAINTS]
+
+Do not suggest product ideas yet.
+
+Instead:
+
+1. Identify the real-world problem being described.
+2. List the stakeholders and their competing needs.
+3. Separate explicit requirements from assumptions.
+4. Identify likely root causes versus visible symptoms.
+5. Extract every constraint and eligibility requirement.
+6. Map each judging criterion to evidence a project
+   must demonstrate.
+7. List the 5 most important unknowns to investigate.
+8. Identify technical or data-access risks.
+
+Clearly distinguish facts, reasonable inferences, and
+unknowns. Do not invent supporting statistics.
+Why this works: it prevents you from prematurely committing to a solution before you understand the opportunity.
+
+Prompt 2 — Investigate existing solutions
+Act as a skeptical technology researcher.
+
+Analyze this problem:
+[PROBLEM DEFINITION]
+
+Search for existing commercial products, open-source
+repositories, research projects, and previous hackathon
+submissions addressing the same or adjacent problem.
+
+Create a comparison table with:
+- Target user
+- Problem solved
+- Main workflow
+- Technical approach
+- What it does well
+- Known limitations, supported by evidence
+- Potentially underserved user needs
+
+Use web research and provide direct links to sources.
+Distinguish verified information from hypotheses.
+Do not claim that a market gap exists simply because
+you did not find a product.
+
+Finish with 5 specific questions we should investigate
+before selecting our approach.
+Do not trust the output merely because it contains links. Open important sources yourself. A search that returns nothing does not establish that nobody has solved the problem.
+
+Prompt 3 — Generate genuinely different approaches
+Only after you have the problem definition and preliminary research should you ask for solutions.
+
+Based on the verified problem analysis below:
+
+[PASTE THE PROBLEM BRIEF AND RESEARCH]
+
+Generate 7 materially different solution hypotheses.
+
+Do not produce 7 variations of a chatbot or dashboard.
+Vary the underlying mechanism, such as:
+- Workflow automation
+- Decision support
+- Detection or prediction
+- Verification and trust
+- Coordination between stakeholders
+- Accessibility or offline operation
+- Integration with an existing workflow
+
+For every hypothesis explain:
+1. The specific user and moment of pain
+2. The mechanism that addresses the problem
+3. Why the mechanism might work
+4. Existing alternatives and likely overlap
+5. The hardest technical dependency
+6. The riskiest assumption
+7. The smallest credible demo
+8. Which judging criteria it could satisfy
+
+Do not label ideas as original without evidence.
+Avoid proposing a full platform for a short hackathon.
+
+Finish by identifying your 3 strongest hypotheses and
+explaining the trade-offs between them.
+The key phrase is "different underlying mechanism." A different color scheme, extra chatbot feature, or alternate dashboard layout does not make an idea meaningfully different.
+
+Prompt 4 — Challenge your favorite idea
+This is the prompt I would pay particular attention to. Models often sound agreeable when you present them with your preferred solution.
+
+Act as a skeptical hackathon judge, domain expert,
+and competing founder.
+
+My proposed solution:
+[YOUR IDEA]
+
+Judging rubric:
+[REAL RUBRIC]
+
+Existing alternatives:
+[RESEARCH FINDINGS]
+
+Try to disqualify this idea intellectually.
+
+1. Why might a user not need it?
+2. Which existing tool already provides the same value?
+3. What part is merely a wrapper around an existing API?
+4. What assumption is most likely wrong?
+5. What could a competing team build more convincingly?
+6. What is technically unproven?
+7. What would make this project generic?
+8. What single change would most improve differentiation?
+9. Which features should be removed?
+10. What evidence would make you reject the idea?
+
+Do not praise the idea unless the evidence supports it.
+End with a clear recommendation: proceed, revise, or reject,
+with reasons.
+Treat the recommendation as an input to your decision, not as an oracle.
+
+Prompt 5 — Get a build plan, not an enormous feature list
+Turn the selected solution into a realistic hackathon MVP.
+
+Available time: [HOURS]
+Team size and skills: [DETAILS]
+Required technology: [REQUIREMENTS]
+
+Define:
+1. One primary user and one central workflow
+2. The exact demo scenario
+3. The minimum features necessary for that workflow
+4. Features explicitly excluded from the MVP
+5. Architecture and API dependencies
+6. A first end-to-end milestone
+7. Risks requiring an early technical test
+8. Test cases and expected outputs
+9. A deployment and fallback plan
+10. A feature freeze deadline
+11. A judge-facing demonstration plan
+
+Prioritize a fully working central workflow over
+many partially working features.
+You now have a structured workflow: understand → investigate → generate → challenge → execute.
+
+One rule that makes these prompts more effective
+Do not let the models choose your idea through majority voting.
+
+Use different models to expose different perspectives, but choose based on evidence, constraints, and the judging rubric. Three models agreeing that an idea sounds good is not the same as three independent users confirming the problem exists.
+
+Also, don't make the models the sole source of novelty. Your own observations from studying existing products, talking to people, and testing the difficult parts of a workflow are where useful differentiation is more likely to emerge.
+
+4. Select an idea with a scoring system
+At this point, you should have multiple candidate ideas, not a favorite picked purely because it sounds exciting.
+
+Score the top three candidates against the criteria below.
+
+The weights are a suggested starting point. Change them to fit the actual hackathon.
+
+Decision criterion
+
+Suggested weight
+
+Fit with judging criteria
+
+25%
+
+Evidence of a meaningful problem
+
+20%
+
+Differentiation from existing approaches
+
+20%
+
+Feasibility within the deadline
+
+15%
+
+Strength and clarity of the demo
+
+10%
+
+Data and API readiness
+
+10%
+
+Total
+
+100%
+
+Score each idea from 1 to 5, where 1 is poor and 5 is excellent. Calculate the weighted score by multiplying each rating by its weight and adding the results.
+
+For example, if an idea scores 4/5 on rubric fit, its contribution is 
+4
+/
+5
+×
+25
+=
+20
+4/5×25=20 points.
+
+You can do this interactively:
+
+Example comparison. The three ideas below are fictional; replace these ratings with your own evidence-based assessments.
+
+Idea A — Balanced
+
+76/100
+Idea B — Safe to build
+
+80/100
+Idea C — High-risk, distinctive
+
+75/100
+Judging-rubric fit
+
+25%
+
+Idea A
+
+4/5
+Idea B
+
+5/5
+Idea C
+
+3/5
+Problem evidence
+
+20%
+
+Idea A
+
+3/5
+Idea B
+
+4/5
+Idea C
+
+5/5
+Differentiation
+
+20%
+
+Idea A
+
+4/5
+Idea B
+
+2/5
+Idea C
+
+5/5
+Feasibility
+
+15%
+
+Idea A
+
+4/5
+Idea B
+
+5/5
+Idea C
+
+2/5
+Demo strength
+
+10%
+
+Idea A
+
+4/5
+Idea B
+
+3/5
+Idea C
+
+5/5
+Data/API readiness
+
+10%
+
+Idea A
+
+4/5
+Idea B
+
+5/5
+Idea C
+
+2/5
+Scores are only as good as the evidence behind them. A high total cannot compensate for a fatal dependency, an ineligible idea, or a technically impossible core feature.
+
+Use the scores to structure the decision, not to pretend that innovation can be measured perfectly.
+
+A few additional rules help:
+
+Reject ideas that violate eligibility requirements, even if everything else is attractive.
+
+Investigate any low feasibility or data-readiness score before committing.
+
+Prefer a specific idea with one strong differentiator over a broad idea with ten conventional features.
+
+If two ideas score similarly, test the riskiest assumption before choosing.
+
+Your goal is not to select the idea with the most features. It is to select the idea with the strongest combination of value, differentiation, feasibility, and demonstrable proof.
+
+5. Validate the idea before building the product
+A high-risk mistake is spending 12 hours implementing an idea and discovering that the most important part doesn't work.
+
+Before you commit, run a small validation sprint.
+
+You do not need a full market study. You need enough evidence to make a better decision than blind guessing.
+
+The three kinds of validation
+A. Problem validation
+
+Try to establish whether the user's problem is real.
+
+Talk to a few representative users if possible. Ask what they actually do today, when the problem occurred most recently, what happened as a result, and what they have already tried.
+
+Avoid leading questions such as "Would you use my amazing AI app?" People may say yes to be polite.
+
+Better questions include:
+
+"Show me how you currently handle this."
+
+"Which part takes the most effort?"
+
+"What happens when this goes wrong?"
+
+"Have you tried another tool? Why did you stop using it?"
+
+For a short hackathon, even three to five relevant conversations can uncover useful assumptions. Treat such a small sample as directional evidence, not proof that an entire market wants your product.
+
+When direct conversations are impossible, use credible research, documented complaints, existing workflows, and public data. Be honest about what you have and haven't validated.
+
+B. Solution validation
+
+Create the simplest artifact that lets someone react to the actual mechanism: perhaps a clickable prototype, a mock result generated from a realistic input, or a minimal functional workflow.
+
+Observe whether the proposed solution actually addresses the problem you identified.
+
+C. Technical validation
+
+Test the most uncertain technical dependency before building the rest of the product.
+
+Examples:
+
+Can the required API return the fields you need?
+
+Is suitable data available and legally usable?
+
+Can your approach achieve acceptable latency?
+
+Can a model handle the difficult inputs, not just the obvious example?
+
+Can an unreliable external service be replaced with a safe fallback?
+
+A useful rule: test the assumption that could kill the project before implementing the parts that depend on it.
+
+Create a one-page validation record
+Before you lock the idea, document the following.
+
+Question
+
+What a good answer looks like
+
+Is the problem credible?
+
+Evidence from actual users, workflows, or reliable sources
+
+Is the approach different?
+
+A specific distinction from existing alternatives
+
+Is the core technically feasible?
+
+A small experiment demonstrates the hardest part
+
+Is the result demonstrable?
+
+A realistic input can lead to a meaningful output
+
+Is it aligned with the rubric?
+
+Every important criterion has a planned proof point
+
+If a key answer remains unknown, don't hide it inside your pitch. Either investigate it, reduce the scope, or choose another approach.
+
+6. Design an MVP that judges can remember
+Here is another reason projects fail to stand out: teams build a large collection of features instead of one complete, impressive workflow.
+
+Think in terms of a vertical slice: a small portion of the product that works from beginning to end.
+
+For example:
+
+1. User supplies input
+
+An actual task or realistic test case
+
+2. Your core mechanism works
+
+The analysis, algorithm, integration, or AI process that makes your idea different
+
+3. A usable result appears
+
+Relevant, understandable, and verifiable
+
+4. The user can act
+
+The workflow produces a useful next step or outcome
+
+Your minimum viable product should complete this central journey reliably.
+
+For the first milestone, it is often worth sacrificing secondary features, advanced settings, elaborate onboarding, extra user roles, and complex analytics to make the main journey work well.
+
+Find your one "wow moment"
+I recommend that every team answer this question:
+
+What is the one thing we can show in our demo that makes the judge think, "That's genuinely useful or technically interesting"?
+
+Possible examples include:
+
+A difficult task completed in a single workflow instead of several manual steps.
+
+A useful output produced from a messy real-world input.
+
+A technical method that works under a constraint competing tools don't handle well.
+
+An explanation that shows why a recommendation was made and where the evidence came from.
+
+A reliable end-to-end process that connects two systems which normally leave the user doing the work manually.
+
+A visual demonstration of a meaningful improvement, supported by a real measurement.
+
+Do not try to manufacture a spectacular feature merely for the demo. The wow moment should be the natural consequence of solving the chosen problem well.
+
+Don't build an AI wrapper and mistake it for a complete solution
+Using an LLM API is not inherently unoriginal. The issue is when the application adds little beyond a prompt box and the resulting text.
+
+Consider what your application contributes around the model:
+
+Is there specialised input preparation?
+
+Is there relevant contextual data?
+
+Does it connect to a real workflow?
+
+Can it verify outputs?
+
+Does it remember or act on structured state?
+
+Is there an evaluation method?
+
+Can it recover safely when the model is wrong?
+
+Does it produce an outcome that a general-purpose assistant doesn't provide as effectively?
+
+If you can't explain what your product adds beyond access to the underlying model, keep investigating.
+
+MLH's organizer guidance explicitly recommends transparency about AI usage and distinguishes the team's contribution from simply reskinning an existing AI tool. Always check the specific rules of your own event, because AI-use policies vary. 
+
+GitHub
+
+Make technical quality visible
+You don't necessarily need the largest model, the most complex architecture, or the most lines of code. You need technology that supports your claim.
+
+For AI-heavy projects, consider preparing a small evaluation set of representative inputs, including edge cases. Check whether the answers are correct, useful, consistent, and safe for the intended use. Where appropriate, track latency, cost, source traceability, and failure rates.
+
+If your application produces recommendations, predictions, or generated content, determine how you will establish that the result is useful rather than merely plausible.
+
+And never invent benchmark results or present manually prepared outcomes as automatic system behavior. If you use demonstration data, label it clearly.
+
+7. Manage the hackathon clock like a product team
+You can have a promising idea and still fail because you spend too long thinking, start integrating too late, or discover at the final hour that the demo doesn't work.
+
+For a 24-hour hackathon, I would start with the following budget.
+
+Decode and investigate
+
+2 hours
+Understand the rubric, identify the user problem, and research alternatives.
+
+Choose and scope
+
+1 hour
+Select one approach, validate its largest risk, and define the demo.
+
+Build the core workflow
+
+13 hours
+Get an end-to-end path working early, then improve its functionality.
+
+Integrate and test
+
+3 hours
+Test realistic cases, fix failures, verify integrations, and deploy.
+
+Polish the demo and submission
+
+3 hours
+Prepare the narrative, README, video, screenshots, and final checks.
+
+Contingency
+
+2 hours
+Leave room for unexpected technical problems or submission issues.
+
+This is an example schedule, not a rigid formula. Adjust it for a 12-hour sprint, a 48-hour event, a longer innovation challenge, or a specialized hardware competition.
+
+The principles are more important than the exact hours:
+
+First third: You should have a selected idea, a defined scope, and evidence that the hardest dependency is feasible.
+
+Middle third: The central user journey should work end-to-end, even if the UI is rough.
+
+Final third: Improve reliability, complete the submission, and rehearse the demo. Avoid adding major new features.
+
+A useful hard rule is to freeze new features once roughly 80% of the available time has elapsed, unless a missing feature prevents the core workflow from working.
+
+Start the demo story before coding is complete
+Write a rough demo script at the beginning of the build. This forces you to think about the user input, the product's central mechanism, and the result you want to show.
+
+Keep refining it as you implement the real product.
+
+Assign ownership clearly
+For a three- or four-person team, a possible split is:
+
+Role
+
+Main responsibility
+
+Product and research
+
+PS analysis, research, scope, rubric mapping
+
+Backend and integrations
+
+Data, APIs, logic, core technical workflow
+
+Frontend and experience
+
+UI, user interactions, visual feedback
+
+Integration and presentation
+
+End-to-end tests, deployment, demo, submission
+
+This is only a starting point. Team members should collaborate, and responsibilities can be combined when your team is smaller. The important part is that no essential task is left ownerless.
+
+For a solo hackathon, use the same roles as sequential checkpoints. Don't allow implementation to consume all available time.
+
+8. Make the demo tell a convincing story
+A project is not judged solely by what exists in the repository. Judges need to understand the work, and the easiest way to communicate that is to demonstrate the product solving the problem.
+
+Devpost's guidance for hackathon demos recommends quickly establishing the problem, showing the working project rather than spending the time on mundane setup steps, and then explaining the potential impact. 
+
+Devpost
+
+For a short pitch, I would use this structure.
+
+0:00–0:20
+Open with the problem
+
+Establish the target user, the real-world situation, and what currently goes wrong. Avoid a long introduction about your team or the size of the market.
+
+0:20–0:40
+Explain the insight
+
+What did you identify that led to your approach? Why does the existing workflow leave an important gap?
+
+0:40–1:40
+Demonstrate the working product
+
+Show a realistic input, the distinctive mechanism, and the resulting action or outcome. This is the centerpiece of the pitch.
+
+1:40–2:10
+Prove the value and technical substance
+
+Explain how the product works, what you've actually tested, and which technical decision makes a difference.
+
+2:10–2:30
+Close with the outcome
+
+State why this approach matters, the limitations that remain, and the most credible next step.
+
+This is a sample 2.5-minute structure. Adapt it to the actual presentation length and rubric.
+
+What not to do during the demo
+Do not spend the opening minute describing every technology you used. Don't show your login flow, navigate through five menus, or explain the entire architecture before showing the product.
+
+Don't start with a lengthy list of features. And don't rely on a slide containing a screenshot of a feature that doesn't actually work when the judge tries it.
+
+Prepare one repeatable demonstration path. Use realistic test inputs, put required files and credentials in place beforehand, and keep a short screen-recorded demo as a fallback when the rules permit it.
+
+Above all, show the outcome before explaining every implementation detail.
+
+Expect judges to ask these questions
+Practice answering the following without becoming defensive:
+
+What is different about this compared with existing tools?
+
+Who specifically needs this?
+
+How do you know the problem matters?
+
+What does the AI, algorithm, or integration actually contribute?
+
+What was the hardest technical challenge?
+
+What evidence shows that the result is correct or useful?
+
+What would you improve with another week?
+
+Which parts work today, and which are still planned?
+
+Honest, specific answers are stronger than claiming that an early prototype is a complete production-ready platform.
+
+9. Make the submission as strong as the product
+A good project can be undermined by an incomplete entry. Treat the README, demo video, deployed application, and written explanation as part of the product.
+
+Devpost recommends testing, proofreading the submission, demonstrating the project in a video, and checking that all requirements are satisfied. 
+
+Devpost.com Help Center
+
+Use this checklist before submitting.
+
+Submission checklist
+0/12
+
+Project name explains or evokes the solution
+
+Problem statement identifies the user and the pain
+
+Solution explains what is genuinely different
+
+All mandatory requirements and sponsor integrations are satisfied
+
+Deployed application or runnable setup works
+
+Core demo path has been tested from start to finish
+
+README includes setup, architecture, features, and limitations
+
+Required screenshots and demo video are included
+
+GitHub repository is accessible and contains no exposed API keys
+
+Technologies, data sources, and AI assistance are disclosed as required
+
+Impact and performance claims are supported by actual evidence
+
+Final submission has been checked against the official rules
+One additional point: check your event's policy on AI tools, pretrained code, outside work, and attribution. Requirements differ; don't assume that a policy from one hackathon applies to another.
+
+10. Why you might not be getting shortlisted
+You said you aren't even getting shortlisted. That is frustrating, but we should diagnose the failure instead of assuming that the problem is your ideas alone.
+
+Here are the most common possibilities to investigate.
+
+Your idea looks familiar
+
+It resembles a common AI assistant, prediction app, or dashboard. The submission describes features but doesn't explain a clear gap in existing solutions.
+
+Change: Add a researched differentiation statement and demonstrate the part that makes your approach distinct.
+
+The problem isn't convincingly validated
+
+The pitch assumes that a problem is widespread or severe without sufficient evidence. The solution may be technically plausible but disconnected from how users actually work.
+
+Change: Investigate the current workaround and support impact claims with real evidence.
+
+Too many features, too little completion
+
+The team has built many screens but cannot show one compelling workflow functioning end-to-end.
+
+Change: Cut secondary features and focus on one central journey.
+
+The product doesn't map to the rubric
+
+The idea is decent, but the submission does not demonstrate what the organizers are actually rewarding—perhaps technical depth, impact, sponsor-tool usage, or design.
+
+Change: Map every high-weight criterion to a specific, visible piece of evidence.
+
+The demo fails to communicate the value
+
+Judges see technology names, a collection of features, or a long explanation rather than a user completing a valuable task.
+
+Change: Rehearse a short, repeatable demo centered on the problem-to-outcome journey.
+
+These are diagnostic possibilities, not a conclusion about your specific submissions. I haven't seen your previous projects, videos, PSs, or judging feedback, so I can't establish which is the actual bottleneck.
+
+A useful exercise is to take your last two or three hackathon submissions and score them against their original rubrics. For each one, ask whether the problem was researched, whether the core feature really worked, what the differentiator was, and whether the demo proved the claimed outcome.
+
+You may find that the same failure repeats across projects. Identifying that pattern is far more valuable than generating another hundred ideas.
+
+11. Build an advantage before the next hackathon even begins
+Winning repeatedly is a different goal from winning one event by chance. The best way to improve over multiple hackathons is to build capabilities that compound.
+
+I'd work on four things outside the event.
+
+A. Study previous winning submissions
+Before your next hackathon, inspect around 10–20 previous winners or finalists in a similar category.
+
+Don't just look at their landing pages. Read their problem statements, project descriptions, repositories when available, and demo videos.
+
+For every project, write down:
+
+Question
+
+What you're trying to learn
+
+Which user problem did they choose?
+
+Their problem-selection strategy
+
+What was the distinctive insight?
+
+Their differentiation strategy
+
+What actually worked in the demo?
+
+Their execution strategy
+
+How did they prove the result?
+
+Their evidence strategy
+
+Why might judges remember it?
+
+Their communication strategy
+
+Then ask which of these patterns are transferable and which depended on circumstances you don't share.
+
+Do not merely copy the winning idea. Your aim is to learn the quality of reasoning and execution that made the project strong.
+
+B. Build technical depth, not just prompt-writing skill
+You don't need to master every technology. But you should be able to implement the central mechanism behind the kinds of projects you want to build.
+
+For example, depending on your chosen area, develop practical experience with API integrations, databases, authentication, deployment, data processing, evaluation, observability, and error handling.
+
+If you frequently enter AI hackathons, learn what happens between the model call and a useful product: data preparation, retrieval, structured outputs, tool use, verification, evaluation, and workflow orchestration.
+
+A team that already knows how to get a small product working end-to-end has more of its scarce hackathon time available for the genuinely difficult part.
+
+C. Practise building under constraints
+Run a personal mini-hackathon before the actual event.
+
+Give yourself four to six hours to take an unfamiliar but manageable problem from a short brief to a working demo.
+
+Force yourself to:
+
+Define the user and pain point before selecting a solution.
+
+Investigate alternatives.
+
+Make a deliberate scope decision.
+
+Build one complete workflow.
+
+Record a 90-second demonstration.
+
+Write down what you would improve.
+
+Repeat this with different kinds of problems. You are training your decision-making process as much as your coding ability.
+
+Follow the actual event rules whenever you compete. Some hackathons restrict reuse of pre-existing projects or code; others permit it under specified conditions.
+
+D. Keep a post-hackathon learning log
+After every event, record three things:
+
+What decision helped the project most?
+
+What decision wasted the most time?
+
+What specific change would improve your next submission?
+
+Also note judging feedback, technical failures, rejected assumptions, and the points where the team lost time.
+
+After several events, you will have your own evidence about what works for you rather than relying on generic hackathon advice.
+
+12. Your repeatable hackathon operating system
+Here is the condensed process I would want you to follow at the next event.
+
+Before you build
+
+Read every rule, requirement, and judging criterion.
+
+Translate the PS into a precise user problem and measurable outcome.
+
+Research existing solutions and previous hackathon submissions.
+
+Generate distinct solution hypotheses rather than one idea from one prompt.
+
+Score the candidates against the real rubric and available resources.
+
+Validate the biggest problem and technical assumptions.
+
+Define the core user journey and one memorable demonstration.
+While you build
+
+Test the riskiest technical dependency early.
+
+Get the smallest end-to-end workflow working.
+
+Use AI to accelerate implementation, testing, and debugging.
+
+Evaluate real behavior, edge cases, and failure modes.
+
+Avoid secondary features until the core workflow is reliable.
+
+Freeze features and reserve time for deployment and submission.
+Before submission
+
+Match the final product against each judging criterion.
+
+Rehearse a short problem-to-outcome demo.
+
+Verify the app, repository, required integrations, and README.
+
+Prepare a fallback demo where permitted.
+
+Verify all requirements and submit on time.
+Overall progress
+
+0%
+The final mindset shift
+I want you to remember one thing from this entire answer.
+
+Your competitive advantage will not come from finding the perfect prompt that makes an LLM reveal a secret winning idea.
+
+It will come from getting better at noticing important problems, finding gaps that other people overlook, making sound trade-offs, testing assumptions, building a reliable product, and proving its value.
+
+AI can accelerate all of those activities. It cannot remove the need for judgment.
+
+The next time you get a PS, don't immediately ask ChatGPT, Claude, and Gemini to solve it. Investigate the problem yourself first, then use the models to challenge your understanding and explore possibilities you might have missed. Select the idea based on evidence, validate the risky parts, and build one complete workflow that shows why your approach deserves attention.
+
+Your aim should be to make each submission more distinctive, more credible, more functional, and easier to judge than the previous one. That is a much more useful strategy for becoming a consistent contender than chasing a guaranteed winning idea—which no one can reliably promise.
+
+also whenever i wanna llm build them or give me detailed process to build  the req proj idea from scratch with any ide like antigravity or cursor or from scratch by me as well it give some random files and zip that creatre a newbie and trash like web doing only several func only not that much great that wanting what about this
+This is actually the next big problem to solve in your hackathon process: how do you turn a good idea into a polished, fully working, technically credible product using AI coding tools?
+
+And honestly, this is where I would make the biggest change to your approach.
+
+1. Why AI coding tools keep giving you mediocre projects
+When you tell an AI coding agent, "Build this hackathon project from scratch," it has to make dozens of decisions you haven't specified: product structure, user flows, visual design, data models, backend logic, validation, loading states, error handling, testing, and deployment.
+
+Unless you guide those decisions, it tends to choose a path that looks complete quickly rather than one that satisfies the deeper goal you have in mind.
+
+You end up with a website that has a landing page, a dashboard, a few buttons, maybe an API integration, and some fake or hardcoded data. It looks like a project, but the important workflows are shallow or incomplete.
+
+There are five distinct problems here.
+
+1. File generation is mistaken for implementation
+
+The agent creates components, routes, and utility files, but the components don't form a coherent working product.
+
+2. The interface has no deliberate design direction
+
+You get a generic navbar, cards, gradients, dashboard, and buttons rather than a distinctive interface designed for a specific user and task.
+
+3. Everything is built at once
+
+The agent spreads effort across ten features before proving that even one important workflow works end-to-end.
+
+4. Real functionality is replaced with appearances
+
+Forms accept input but don't persist it. Charts display sample numbers. Buttons do nothing. AI results aren't validated. Authentication or integrations are simulated without being labelled as simulations.
+
+5. Nothing forces the agent to prove that it finished
+
+The agent says the build is complete without demonstrating that the app starts, the major flows work, and the deployed result matches the intended design.
+
+This isn't simply a model-quality issue. It's also a workflow issue.
+
+For example, Cursor's current documentation specifically recommends Plan Mode for complex tasks, with a reviewable implementation plan before code is written. Its browser tooling can also inspect actual rendered pages, screenshots, console errors, and network requests. Those capabilities are valuable because they close the gap between generating code and verifying a working product. (Cursor Plan Mode, Cursor Browser)
+
+Your new rule should be: never measure progress by the number of generated files. Measure it by the number of important user tasks that work and have been tested.
+
+2. The system I recommend: build in stages, not with one giant prompt
+Whether you use Cursor, Google Antigravity, another coding agent, or write the code yourself, use the same sequence.
+
+01
+Product specification
+
+What exactly are we building, for whom, and why?
+
+02
+Feature and workflow design
+
+What should a user be able to do from beginning to end?
+
+03
+Visual direction
+
+What should the product look and feel like?
+
+04
+Technical plan
+
+How will the data, UI, APIs, and backend work together?
+
+05
+Small implementation milestones
+
+Can we build and verify one working part at a time?
+
+06
+Real-browser testing
+
+Does the product behave and look as intended?
+
+07
+Polish and hardening
+
+Have we handled failures, empty states, accessibility, and responsiveness?
+
+08
+Deployment and demo
+
+Can judges reliably use and understand the finished product?
+
+The key is that each stage produces something you can inspect before the next stage begins.
+
+You do not need eight separate documents or eight different models. You need clear decisions, a controlled scope, and checkpoints. A small project may combine several stages; a technically demanding project may require more.
+
+Stage 1 — Write the product specification before asking for code
+Give the coding agent your problem statement, chosen idea, team capabilities, and deadline.
+
+Ask it to create a specification—not a website.
+
+A good initial specification answers:
+
+Section
+
+What must be decided
+
+Product purpose
+
+The problem and the intended outcome
+
+Primary user
+
+Who the product is actually designed for
+
+Main workflow
+
+The principal task, from input to result
+
+Features
+
+What is necessary now and what can wait
+
+Data
+
+Where the data originates and how it is stored
+
+Integrations
+
+Which APIs or external services are needed
+
+Constraints
+
+Time, budget, required technologies, privacy, and deployment
+
+Acceptance criteria
+
+How we will establish that each feature works
+
+The acceptance criteria are especially important. "Add a dashboard" is not a testable requirement.
+
+"Show the user's saved analyses, allow opening an analysis, display an appropriate empty state when there are none, and preserve the data after refresh" is much more useful.
+
+Use this planning prompt
+Copy this into the planning mode of your coding agent. It deliberately prohibits coding at the start.
+
+Hackathon Project — Specification and Planning Phase
+You are my senior product engineer, software architect, UX designer, and technical reviewer.
+
+I am building a hackathon project. Your job is to help me turn the idea into a coherent, usable, technically credible product—not merely generate files or a basic website.
+
+Project context
+Problem statement:
+[PASTE THE PS]
+
+Selected solution:
+[DESCRIBE THE IDEA AND ITS DIFFERENTIATOR]
+
+Judging criteria:
+[PASTE THE REAL RUBRIC]
+
+Deadline and team:
+[AVAILABLE TIME, TEAM SIZE, SKILLS]
+
+Required technology or resources:
+[TECH STACK, APIS, DATA, HARDWARE, BUDGET]
+
+Rules for this phase
+Do not implement the product yet.
+
+Inspect the existing repository and its current structure before proposing changes.
+
+Identify the primary user, problem, main workflow, and the outcome the user should receive.
+
+Separate essential features from optional features.
+
+Identify technical uncertainties, missing information, and external dependencies.
+
+Do not invent APIs, data sources, business rules, or capabilities.
+
+Recommend the simplest architecture that can deliver the intended functionality reliably within the deadline.
+
+Do not add a technology or dependency without a reason.
+
+Treat visual quality, functionality, accessibility, and reliability as product requirements.
+
+If essential information is missing, state a reasonable assumption or ask only about a decision that materially blocks implementation.
+
+Deliverables
+Create a concise product specification containing:
+
+Product purpose and target user
+
+Primary user journey
+
+Feature list grouped into must-have, should-have, and later
+
+Acceptance criteria for every must-have feature
+
+Proposed page and component structure
+
+Data model and API dependencies
+
+Technical architecture and rationale
+
+Security and failure-handling considerations
+
+Proposed visual direction
+
+Implementation milestones in dependency order
+
+Testing and deployment plan
+
+The major risks that must be validated early
+
+Finish with a proposed first milestone that can be built and tested independently.
+
+Do not modify application code until the plan is reviewed and approved.
+
+Once the agent produces the specification, inspect it. Correct anything that isn't faithful to the PS, remove unnecessary features, and resolve major technical assumptions.
+
+Do not confuse a long specification with a good specification. It should reduce ambiguity, not become an enormous document nobody follows.
+
+Stage 2 — Define the experience and visual direction
+This stage is often neglected, which is why AI-built interfaces can look like generic templates even when the idea is good.
+
+Do not leave "make the UI beautiful" as the only design instruction.
+
+Decide what the product should communicate and how a user should interact with it.
+
+For example, a developer tool might benefit from a dense, highly functional interface. A public-service application might need excellent readability, clear language, obvious actions, and accessible mobile layouts. An analytics product may need sophisticated visualizations, but only if those visualizations support decisions the user actually needs to make.
+
+Create a brief design specification with:
+
+Design direction and a small set of visual references.
+
+Typography, color palette, spacing scale, borders, and elevation.
+
+Layout rules, page hierarchy, navigation, and component patterns.
+
+Mobile, tablet, and desktop behavior.
+
+Input, loading, empty, success, error, and disabled states.
+
+Accessibility requirements, including keyboard navigation and sufficient contrast.
+
+If you have a reference website or screenshot, give it to the agent and explain which properties you want to learn from. You can reference its overall composition, density, typography, or interaction style without copying its branding.
+
+A design prompt that is more useful than "make it modern"
+Product UI Design Direction
+Act as a senior product designer designing an interface for a real application, not a generic hackathon landing page.
+
+Read the approved product specification and identify the UI decisions that best support the actual user workflow.
+
+Before implementing:
+
+Propose two distinct visual directions, each with a clear rationale.
+
+Describe the page hierarchy, navigation, primary action, and information density.
+
+Define typography, colors, spacing, borders, component styles, and icon usage.
+
+Explain how the design changes across mobile, tablet, and desktop.
+
+Identify the loading, empty, error, success, and disabled states required by the main workflow.
+
+Identify places where visualizations or animation would improve understanding, and where they would be unnecessary.
+
+Recommend one direction based on the product's audience and purpose.
+
+Once the direction is approved, implement it consistently across the actual application.
+
+Design requirements:
+
+Avoid a generic collection of cards, gradients, and dashboard widgets unless the product genuinely needs them.
+
+Give each page a clear hierarchy and intentional visual composition.
+
+Use real, meaningful content instead of repeated placeholder text.
+
+Use a consistent icon library and proper semantic components.
+
+Ensure readable typography, clear interaction states, accessible contrast, and responsive layouts.
+
+Do not add decorative features that obscure the primary task.
+
+Do not change the product requirements simply to make the UI easier to build.
+
+After implementation, open the running application in a browser, inspect screenshots at desktop and mobile sizes, identify visual defects, and fix them.
+
+Do not declare visual quality complete based only on the source code. Verify the rendered result.
+
+The strongest results usually come when you provide a concrete visual target and evaluate the actual rendering, rather than expecting the model to invent great design and judge itself correctly.
+
+Stage 3 — Choose the architecture before creating a forest of files
+This doesn't mean you need enterprise architecture for a weekend project. You need enough design to prevent components, data, and API calls from becoming disconnected.
+
+Suppose your project needs a frontend, a backend, a database, and an AI service. The plan should make clear which component owns each responsibility and how information moves between them.
+
+For example:
+
+Frontend
+
+Input, interaction, results, and user feedback
+
+Application backend
+
+Validation, business logic, authorization, and orchestration
+
+Database
+
+Persistent application state
+
+External services
+
+AI, APIs, and other integrations
+
+Illustrative architecture only. A static site or small client-side tool may not need a separate backend or database at all.
+
+Ask the agent to explain the responsibilities and data flow before implementing. Review its proposal and avoid accepting extra databases, queues, microservices, frameworks, or packages simply because the model is familiar with them.
+
+Then establish the repository structure. It should represent real responsibilities, not create a new file for every small operation just to appear architecturally sophisticated.
+
+A useful baseline is:
+
+project/
+├── AGENTS.md
+├── README.md
+├── docs/
+│   ├── PRODUCT_SPEC.md
+│   └── IMPLEMENTATION_PLAN.md
+├── src/
+│   ├── components/
+│   ├── features/
+│   ├── services/
+│   └── ... 
+├── tests/
+├── .env.example
+└── package.json
+This is illustrative; adapt it to your actual framework. Don't force a TypeScript or React folder structure onto a Python application.
+
+Important: Keep the work in one actual project repository. Don't ask a chat model to generate a completely fresh ZIP every time you want another feature. In an IDE, let the agent edit the existing codebase incrementally. Use version control so you can review changes and revert a bad implementation.
+
+3. How to make Cursor or Antigravity actually follow this process
+The next improvement is to give your coding agent persistent project rules, so you don't have to remind it of your expectations in every conversation.
+
+This is not a guarantee that the agent will follow every instruction perfectly. It gives the agent more consistent context, which you can reinforce with implementation plans, tests, and your own review.
+
+Cursor supports AGENTS.md as well as project-specific rules in .cursor/rules/. Google Antigravity supports persistent rules using AGENTS.md, GEMINI.md, and .agents/rules/. (Cursor Rules, Antigravity Rules)
+
+Set up your permanent project instructions
+Create an AGENTS.md file in the root of your repository and add instructions like these:
+
+Project Engineering Standards
+Product ownership
+Read docs/PRODUCT_SPEC.md before implementing product features.
+
+Follow the approved user flows and acceptance criteria.
+
+Optimize for a coherent, reliable product, not the largest feature count.
+
+Do not silently change the product requirements.
+
+If a requirement conflicts with the architecture or deadline, explain the conflict before making a major change.
+
+Repository discipline
+Inspect the existing repository before creating or modifying files.
+
+Reuse the existing framework, dependencies, and conventions unless a justified change is approved.
+
+Do not create duplicate components, unused abstractions, speculative files, or unnecessary dependencies.
+
+Modify only files needed for the current milestone.
+
+Do not replace functioning code merely to rewrite it in your preferred style.
+
+Keep implementation and documentation consistent.
+
+Implementation process
+Work on one approved milestone at a time.
+
+Complete a functional end-to-end slice before expanding scope.
+
+Do not implement optional features without approval.
+
+Use real application logic and properly integrated data.
+
+Do not use hardcoded demo responses to simulate core functionality unless explicitly approved and clearly labelled.
+
+Define appropriate loading, empty, success, error, and disabled states.
+
+Protect secrets and use environment variables for credentials.
+
+Code quality
+Follow the conventions of the existing project.
+
+Keep components and functions understandable and maintainable.
+
+Validate untrusted input and handle expected failures.
+
+Follow appropriate authentication, authorization, and data-protection practices.
+
+Add tests for important business logic and critical user flows.
+
+Avoid catching errors silently or hiding failed API requests.
+
+Design quality
+Follow the approved visual direction consistently.
+
+Prioritize clarity, information hierarchy, meaningful interactions, and responsive behavior.
+
+Avoid generic decorative sections or components that do not serve a user need.
+
+Use semantic HTML, accessible labels, keyboard navigation, and appropriate contrast.
+
+Verify the rendered application rather than assuming that valid JSX or CSS means the interface is correct.
+
+Verification and reporting
+Run the relevant lint, type-check, test, and build commands available in the repository.
+
+Run the application and inspect the changed workflow when feasible.
+
+Fix errors introduced by your changes before declaring the milestone complete.
+
+Do not claim that a test, command, or browser check passed unless it was actually run.
+
+Report changed files, commands executed, results, known limitations, and remaining issues.
+
+Update the implementation plan when a milestone is completed.
+
+You can adjust these rules to your project and the capabilities of your tool. The point is not to make the file enormous. It's to codify the mistakes you repeatedly encounter so they become harder to repeat.
+
+How I would configure your tools
+Antigravity Vs Cursor: Google's AI IDE Tested
+
+Cursor
+
+Open your actual repository, switch to Plan Mode for substantial changes, and review the implementation plan before you let the agent build. Use AGENTS.md for portable instructions or .cursor/rules/*.mdc for Cursor-specific rules. After implementation, use its browser and terminal capabilities to check the real application. (Plan Mode documentation)
+
+구글 안티그래비티 vs 커서: “코딩 노예”에서 “개발 팀장”으로 승진하는 법 (feat. 꿀조합 BEST 4) | Litmers
+
+Google Antigravity
+
+Keep project instructions in AGENTS.md or GEMINI.md, or use .agents/rules/ for scoped rules. Review the agent's proposed plan and artifacts, then verify the implementation using the browser capabilities available in your version. Google's documented /browser subagent is for the Antigravity app and CLI, not the Antigravity IDE, so don't assume that exact command is available in the IDE. (Rules, Browser command)
+
+My AI Workflow as a Frontend Engineer - DEV Community
+
+Coding manually with AI assistance
+
+Use the same specification, architecture, and acceptance criteria. Ask the model to explain a change, implement a small module or function, review the diff, and suggest tests. Apply the change, run the project, and inspect the result before moving on.
+
+My recommendation is to start with one primary coding agent and one reviewer, rather than letting three agents all rewrite the same project.
+
+The primary agent implements the approved task. The reviewer examines the current code, product spec, screenshots, and test output, then identifies gaps. You decide which fixes to accept. If you do use parallel coding agents, give them separate tasks or isolated branches.
+
+This reduces conflicting edits and keeps one coherent implementation.
+
+4. The implementation loop that prevents half-working features
+Once the specification and architecture are approved, stop asking the agent to build the entire product.
+
+Ask it to complete one milestone at a time.
+
+For most hackathon projects, I would use these milestones.
+
+Milestone
+
+What it must achieve
+
+M0 — Project foundation
+
+App starts; dependencies and configuration work
+
+M1 — Interface skeleton
+
+Navigation, layout, and primary pages render correctly
+
+M2 — Core workflow
+
+The main user can complete the central task end-to-end
+
+M3 — Real data and integrations
+
+API calls, business logic, and persistence work correctly
+
+M4 — Essential supporting features
+
+Only the features necessary for the core experience
+
+M5 — Verification and polish
+
+Tests, error states, responsive behavior, and visual refinement
+
+M6 — Release
+
+Deployment, documentation, and a rehearsed demo
+
+You may combine M0 and M1 for a simple project. For a more technical idea, M2 and M3 might need multiple milestones. The sequence matters more than the count.
+
+The implementation prompt
+Use this for each milestone, substituting the actual requirements.
+
+Implement One Approved Milestone
+Read AGENTS.md, docs/PRODUCT_SPEC.md, and docs/IMPLEMENTATION_PLAN.md.
+
+Current milestone:
+[NAME AND ID]
+
+Required behavior:
+[DESCRIBE WHAT MUST WORK]
+
+Acceptance criteria:
+[LIST TESTABLE CONDITIONS]
+
+Before editing:
+
+Inspect the relevant existing files.
+
+Identify the smallest set of changes required.
+
+Explain any critical dependency or architectural decision.
+
+Check that the milestone fits the approved plan.
+
+Implementation rules:
+
+Implement only this milestone.
+
+Preserve the existing stack and functioning behavior.
+
+Do not create unrelated pages, features, or dependencies.
+
+Do not substitute static or fake data for required real functionality.
+
+Handle loading, success, empty, and error states relevant to this task.
+
+Keep the code understandable and consistent with the repository.
+
+Add or update appropriate tests.
+
+After implementation:
+
+Run the appropriate tests, type checks, lint checks, and build commands that exist in the project.
+
+Start the application when possible.
+
+Exercise the changed user workflow with realistic input.
+
+Inspect the actual rendered UI for the affected pages.
+
+Fix the problems caused by this milestone and rerun the relevant checks.
+
+Update the implementation plan to reflect the actual status.
+
+Report:
+
+What was implemented
+
+Which files changed and why
+
+Commands executed and their actual results
+
+Acceptance criteria verified and not verified
+
+Remaining bugs or limitations
+
+Any blocker that prevents the next milestone
+
+Do not begin the next milestone until this one is verified or its remaining limitations are explicitly recorded.
+
+The final instruction is deliberate: "Do not begin the next milestone until this one is verified."
+
+Without that boundary, coding agents can continuously add new features while carrying forward earlier bugs.
+
+Example: turning a vague feature into a working feature
+Say your project includes uploading a CSV file and detecting anomalies.
+
+A weak task is:
+
+Build the CSV upload page with a beautiful UI and AI anomaly detection.
+
+A useful task is:
+
+The user must upload a CSV containing a documented set of columns. Reject unsupported file types and malformed files with clear error messages. Validate the required columns, process every valid row using the specified anomaly-detection method, display the detected anomalies alongside their original row identifiers and reasons, and allow the result to be exported. Empty files, duplicate rows, and invalid numeric values must have defined behavior. The core logic must be tested independently of the UI. Do not fabricate anomaly results when processing fails.
+
+Now you can verify specific outcomes.
+
+A form rendering isn't completion. An upload that returns a result for a valid file isn't complete if malformed inputs crash the app. A beautiful table isn't complete if it doesn't contain the actual processing output.
+
+That is the difference between generating a feature-shaped component and implementing a feature.
+
+5. The missing step: force the agent to inspect what it has actually built
+This is what I would change most urgently in your current workflow.
+
+The coding agent has finished writing code. Don't immediately ask it to add more features.
+
+Ask it to become a QA engineer and inspect the product against the approved specification.
+
+For the best results, run the application and make the agent inspect the rendered interface, not just the source files. Cursor's browser documentation describes using actual screenshots, console messages, network traffic, and browser interactions to test an application and diagnose issues. (Cursor Browser)
+
+Use this prompt:
+
+Independent Product QA — Find and Fix Defects
+Act as a skeptical senior QA engineer and product reviewer.
+
+Do not add new features or redesign the application yet.
+
+Inspect:
+
+AGENTS.md
+
+docs/PRODUCT_SPEC.md
+
+The actual implementation
+
+The available test suite
+
+The running application, if it can be started
+
+Evaluate the product against its approved requirements.
+
+Functional testing
+Test the primary user journey from beginning to end.
+
+Check:
+
+Whether every visible control has the correct behavior
+
+Whether inputs are validated
+
+Whether real data is processed and persisted as required
+
+Whether outputs come from the actual implementation
+
+Whether loading, success, empty, and error states behave correctly
+
+Whether refreshes, invalid inputs, repeated requests, and API failures cause problems
+
+Visual testing
+Inspect the rendered application at a desktop viewport and a mobile viewport.
+
+Look for:
+
+Broken layouts and overflow
+
+Inconsistent spacing and typography
+
+Poor visual hierarchy
+
+Missing or unclear interaction states
+
+Unreadable text and accessibility problems
+
+Placeholder content, redundant cards, or decorative UI that adds no value
+
+Inconsistency with the approved design direction
+
+Technical testing
+Run the existing tests and appropriate type-check, lint, and build commands.
+
+Inspect:
+
+Browser console errors
+
+Failed network requests
+
+API error handling
+
+Broken routes and links
+
+Data handling and persistence
+
+Exposed credentials or unsafe secret handling
+
+Procedure
+Produce a defect report grouped by severity.
+
+Identify the evidence for each defect.
+
+Distinguish a confirmed defect from an unverified concern.
+
+Fix high-impact defects in the current scope.
+
+Rerun the relevant tests and inspect the changed behavior.
+
+Report what was actually verified and what remains untested.
+
+Do not invent successful test results. Do not declare the application production-ready merely because the build succeeds. Do not add new features to conceal existing defects.
+
+One thing to remember: an agent can be biased toward its own implementation. It might miss a requirement because its assumptions shaped both the code and the tests.
+
+This is why a second reviewer, a test suite based on the approved requirements, and your own hands-on testing are valuable.
+
+Use three quality gates
+Gate 1: Does it run?
+
+The application starts without blocking errors, the required build completes, and the main pages load.
+
+Gate 2: Does it work?
+
+The primary user completes the intended workflow with real application logic, valid data, and correctly handled failures.
+
+Gate 3: Is it convincing?
+
+The interface is coherent, responsive, accessible, and polished, and the demo communicates the value of your distinctive feature.
+
+A successful build passes only the first part of the process. It does not establish the other two.
+
+6. How to avoid the "random files and ZIP" problem specifically
+Let's address your original complaint directly.
+
+There are two different environments in which you might ask an LLM to create a project.
+
+Case A: You use ChatGPT or another chat-based LLM to generate files or a ZIP.
+
+The model can generate a starter implementation or archive, but you still need to open it in your development environment, install the dependencies, run it, configure its services, and test it. Don't assume that a generated archive has actually been executed or verified just because it was successfully produced.
+
+For anything beyond a tiny prototype, prefer working from a repository in your IDE, or request a clearly defined patch that you can apply to the existing project.
+
+Case B: You use Cursor or Antigravity against your project folder.
+
+Open the actual repository. Give the agent the specification. Let it implement and test changes in that workspace.
+
+Ask for a ZIP only when you're packaging the final deliverable or when the submission requirements explicitly demand one. Packaging should be the end of the process, not the primary way you develop.
+
+In either case, make the agent report:
+
+Which files it changed and why.
+
+Which commands it actually executed.
+
+Which tests passed or failed.
+
+Which user workflows it verified.
+
+Which important requirements remain incomplete.
+
+Don't allow it to treat generating every requested file as proof that the application works.
+
+7. If you're coding from scratch yourself, use the same process differently
+You don't have to become dependent on autonomous coding agents to use AI effectively.
+
+When writing the implementation yourself, let the model help you understand and solve specific pieces of the system, rather than asking it to create the whole application.
+
+For example, you can work through these steps:
+
+Your task
+
+What to ask the LLM for
+
+Set up the project
+
+Explain the required commands and initial structure
+
+Understand the data model
+
+Propose entities, relationships, and validation rules
+
+Implement business logic
+
+Explain an algorithm, then help implement and test it
+
+Connect the API
+
+Define request/response types, errors, authentication, and retries
+
+Build the interface
+
+Implement individual components against an agreed design
+
+Debug failures
+
+Diagnose the actual error and propose a minimal fix
+
+Verify behavior
+
+Generate edge cases and tests based on your requirements
+
+Prepare the demo
+
+Help create a realistic scenario that exercises the real application
+
+You should still run and inspect everything. If a model generates a large block of code you don't understand, ask it to explain the important decisions and break the implementation into smaller, testable pieces.
+
+This route may initially feel slower than asking for a whole application. But it helps you build the technical understanding to detect nonsense, debug failures, and make stronger decisions during a hackathon.
+
+8. The complete workflow I would use for your next hackathon
+Here's how I would combine the problem-solving roadmap from your earlier question with this engineering process.
+
+Phase A — Find the opportunity
+Decode the PS and judging rubric.
+Research actual users, current solutions, and underserved needs.
+Generate materially different hypotheses and challenge your preferred one.
+Select an idea using evidence, feasibility, and rubric fit.
+Phase B — Define the product
+Write the product specification and measurable acceptance criteria.
+Define the smallest complete user journey and core differentiator.
+Approve the architecture and visual direction.
+Set up the repository, persistent rules, and implementation milestones.
+Phase C — Build the product
+Test the riskiest technical dependency early.
+Implement one vertical slice at a time in the existing codebase.
+Run the application and verify each milestone before expanding scope.
+Use AI for implementation, debugging, testing, and code review—not just code generation.
+Phase D — Make it competitive
+Run functional and visual QA against the specification.
+Fix critical defects and refine the main workflow.
+Deploy, verify the live app, and prepare a fallback demo.
+Submit with a clear explanation of the problem, differentiation, technical work, and evidence.
+My final recommendation
+For your next project, change just three habits first.
+
+First: Never start implementation with a single "build the entire project" prompt. Start with a specification and an approved plan.
+
+Second: Never move on from the core workflow until you have run it and verified that it works. Build breadth only after you have built depth.
+
+Third: Never accept "done" as a test result. Make the agent show the actual commands, tests, browser checks, and outstanding limitations.
+
+That combination will help you avoid much of the generic, shallow output you're getting today.
+
+One last point: a polished app is not automatically a shortlist-worthy hackathon project. You need both a distinctive, well-supported solution and strong execution. The ideal workflow therefore doesn't merely produce a beautiful website—it produces a product whose central claim is real, whose important functionality can be demonstrated, and whose implementation supports the reason you believe it deserves to win.
+
