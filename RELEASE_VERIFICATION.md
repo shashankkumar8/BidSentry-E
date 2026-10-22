@@ -1,6 +1,6 @@
 # Release verification — BidSentry-E / Syntax Squad
 
-**Candidate:** 1.3 · **Date:** 22 October 2026 · **Status:** Local automated validation and adversarial protection passed; live TinyFish account-backed run pending local evaluator API key.
+**Candidate:** 1.4 · **Date:** 23 October 2026 · **Status:** Local automated validation and adversarial protection passed (68 tests); GitHub repository synced to `https://github.com/shashankkumar8/BidSentry-E.git`; Render deployment config (`render.yaml`) and CI workflow (`.github/workflows/ci.yml`) configured; live TinyFish account-backed run pending user API key.
 
 ## Checks actually run
 
@@ -8,9 +8,11 @@
 - `python -m compileall -q app engine.py tests scripts`: passed cleanly.
 - `node --check app/static/app.js`: passed.
 - `python -m scripts.check_inline_js`: passed (workbench inline script parses cleanly with Node).
+- `python scripts/verify_package.py`: passed; verifies 100% byte matches for all preserved references in `INPUT_HASHES.txt`, checks JS syntax, and verifies clean workspace hygiene.
 - `python engine.py`: passed; verified offline synthetic smoke runner, QuoteCheck adversarial guard, and Clause Ledger output on Windows UTF-8 stdout.
 - FastAPI endpoint smoke check: verified root, health, presets, lab quote-check, and verify endpoints.
 - Archive hygiene scan: verified absence of `.env`, API keys, `.venv`, `__pycache__`, local databases, and presentations from the technical release.
+- Equilibrium build test: `npm ci` and `npm run build` in `equilibrium-landing/` passed in 11.2s with zero TypeScript or Vite errors.
 
 ## Implemented and tested locally
 

@@ -19,10 +19,12 @@ APPLICATION
 - app/data/demo_tenders.json — explicitly synthetic example data
 - engine.py — deterministic local synthetic smoke runner
 
-TESTS / TOOLING
+TESTS / TOOLING / DEPLOYMENT
 - tests/ — 68 automated tests, including provider-stream, adversarial edge-case regressions and fail-closed cases; provider calls are mocked
 - requirements.txt, .env.example, .gitignore, pytest.ini, run_windows.bat
-- scripts/check_inline_js.py
+- scripts/check_inline_js.py, scripts/verify_package.py
+- render.yaml — Render Web Service deployment configuration
+- .github/workflows/ci.yml — Automated continuous integration workflow (68 tests, syntax checks, verification)
 
 TECHNICAL DOCUMENTATION
 - 00_START_HERE.md, README.md, SPEC.md, SSE_STREAM_CONTRACT.md, BUILD_SEQUENCE.md
